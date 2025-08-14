@@ -11,15 +11,15 @@ interface PaginationProps {
         <button
           onClick={() => onPageChange(page - 1)}
           disabled={!hasPrevious}
-          className="px-3 py-1 bg-gray-700 text-white rounded disabled:opacity-50"
+          className="px-3 py-1 text-white rounded disabled:opacity-50"
         >
           Previous
         </button>
-        <span className="text-white">Page {page}</span>
+        <span className="text-black">Page {page}</span>
         <button
           onClick={() => onPageChange(page + 1)}
           disabled={!hasNext}
-          className="px-3 py-1 bg-gray-700 text-white rounded disabled:opacity-50"
+          className="px-3 py-1 text-white rounded disabled:opacity-50"
         >
           Next
         </button>

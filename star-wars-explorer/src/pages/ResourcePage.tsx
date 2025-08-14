@@ -1,6 +1,6 @@
 import { useParams, useSearchParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { getResource, type ResourceListResponse } from "../services/swapi";
+import { getResource } from "../services/swapi";
 import Loader from "../components/Loader";
 import ErrorMessage from "../components/ErrorMessage";
 import Pagination from "../components/Pagination";
@@ -9,6 +9,13 @@ interface ResourceListItem {
   name?: string;
   title?: string;
   url: string;
+}
+
+interface ResourceListResponse<T> {
+  count: number;
+  next: string | null;
+  previous: string | null;
+  results: T[];
 }
 
 export default function ResourcePage() {
