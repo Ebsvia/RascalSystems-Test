@@ -1,5 +1,3 @@
-// src/services/swapi.ts
-
 export interface PersonWithHomeworld {
   name: string;
   height: string;
@@ -77,3 +75,5 @@ export async function fetchPersonWithHomeworld(id: string): Promise<PersonWithHo
     },
   };
 }
+
+//didn't want to get everything from the API for styling and rate limits purposes

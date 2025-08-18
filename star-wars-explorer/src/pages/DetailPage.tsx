@@ -33,12 +33,13 @@ export default function PersonDetailPage() {
 
   return (
     <div className="min-h-screen flex items-center justify-center p-6">
-      <div className="bg-gray-800 text-white rounded-lg shadow-lg overflow-hidden lg:grid lg:grid-cols-2 lg:gap-8 w-full max-w-6xl">
+      <div className="bg-gray-800 text-white rounded-lg shadow-lg overflow-hidden lg:grid lg:grid-cols-2 lg:items-stretch w-full max-w-6xl">
         
-        {/* Left - Image Placeholder */}
-        <div className="bg-gray-700 flex items-center justify-center h-64 lg:h-full">
-          <span className="text-gray-400 italic">No image available</span>
-        </div>
+        {/* Left - Background Image */}
+        <div
+          className="h-64 lg:h-full bg-center bg-cover"
+          style={{ backgroundImage: "url('/assets/Star-wars-logo.webp')" }}
+        ></div>
 
         {/* Right - Details */}
         <div className="p-8 flex flex-col justify-center space-y-8">

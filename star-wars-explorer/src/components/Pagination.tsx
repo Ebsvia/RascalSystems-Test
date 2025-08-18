@@ -15,7 +15,7 @@ interface PaginationProps {
         >
           Previous
         </button>
-        <span className="text-black">Page {page}</span>
+        <span className="text-white">Page {page}</span>
         <button
           onClick={() => onPageChange(page + 1)}
           disabled={!hasNext}

@@ -8,8 +8,9 @@ export default function Navbar() {
   return (
     <nav className="bg-gray-900 text-white p-4">
       <div className="flex items-center justify-between">
-        <div className="text-xl font-bold">StarWars API</div>
-
+          <Link to="/">
+        <div className="text-xl font-bold text-white">StarWars API</div>
+</Link>
         {/* Hamburger button for mobile */}
         <button
           className="sm:hidden flex items-center px-3 py-2 border rounded text-gray-300 border-gray-400 hover:text-yellow-300 hover:border-yellow-300"
@@ -22,7 +23,7 @@ export default function Navbar() {
           >
             <title>Menu</title>
             {isOpen ? (
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /> // X icon when open
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /> 
             ) : (
               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
             )}
